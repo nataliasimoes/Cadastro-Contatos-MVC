@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CadastroDeContatos.styles.css" asp-append-version="true" />
+    <link href="https://cdn.datatables.net/2.3.1/css/dataTables.bootstrap5.css" rel="stylesheet"/>
+    <link href="https://cdn.datatables.net/v/dt/dt-2.3.1/datatables.min.css" rel="stylesheet" integrity="sha384-euvbLDizNhjdB+SK/Ai+GY3WCCHaDJM1tnnh2IqvUY9zjhlo21JkywSg8X5hlMY8" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -43,6 +46,7 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.3.1/datatables.min.js" integrity="sha384-1LmfH5u7+DRwux/q4YYqAi+OjwkIVYJdPQijPS9S28cj8AeFnpNCkSVlZgvRdOzb" crossorigin="anonymous"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
