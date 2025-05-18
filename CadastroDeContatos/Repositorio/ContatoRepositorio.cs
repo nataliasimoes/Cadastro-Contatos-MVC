@@ -46,4 +46,19 @@ public class ContatoRepositorio : IContatoRepositorio
 
         return contatoDb;
     }
+
+    public bool Apagar(int id)
+    {
+        ContatoModel contatoDb = ListarPorId(id);
+
+        if (contatoDb == null)
+        {
+            throw new System.Exception("Houve um erro na exclusão");
+        }
+
+        _bancoContext.Contatos.Remove(contatoDb);
+        _bancoContext.SaveChanges();
+
+        return true;
+    }
 }

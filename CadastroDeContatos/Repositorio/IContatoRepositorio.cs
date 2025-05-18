@@ -9,4 +9,5 @@ public interface IContatoRepositorio
     ContatoModel Adicionar(ContatoModel contato);
     ContatoModel ListarPorId(int id);
     ContatoModel Atualizar(ContatoModel contato);
+    bool Apagar(int Id);
 }
