@@ -43,6 +43,11 @@ public class ContatosController : Controller
     [HttpPost]
     public IActionResult Criar(ContatoModel contato)
     {
+        if (!ModelState.IsValid)
+        {
+            return View(contato);
+        }
+
         _contatoRepositorio.Adicionar(contato);
         return RedirectToAction("Index");
     }
@@ -50,6 +55,11 @@ public class ContatosController : Controller
     [HttpPost]
     public IActionResult Alterar(ContatoModel contato)
     {
+        if (!ModelState.IsValid)
+        {
+            return View("Editar", contato);
+        }
+
         _contatoRepositorio.Atualizar(contato);
         return RedirectToAction("Index");
     }
