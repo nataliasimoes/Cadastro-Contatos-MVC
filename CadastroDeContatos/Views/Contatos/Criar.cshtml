@@ -9,28 +9,29 @@
 
 </div>
 
-<form asp-controller="Contatos" asp-action="Criar" method="post">
-  <div class="mb-3">
-    <label for="nome" class="form-label">Nome</label>
-    <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do contato">
-    @Html.ValidationMessageFor(x => x.Nome)
-  </div>
+<div class="d-grid gap-2 col-sm-12 col-md-6 mx-auto">
+    <form asp-controller="Contatos" asp-action="Criar" method="post">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do contato">
+            @Html.ValidationMessageFor(x => x.Nome)
+          </div>
 
-  <div class="mb-3">
-    <label for="email" class="form-label">Email</label>
-    <input type="text" asp-for="Email" class="form-control" placeholder="Digite o email do contato">
-    @Html.ValidationMessageFor(x => x.Email)
-  </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" asp-for="Email" class="form-control" placeholder="Digite o email do contato">
+            @Html.ValidationMessageFor(x => x.Email)
+          </div>
 
-  <div class="mb-3">
-    <label for="celular" class="form-label">celular</label>
-    <input type="text" asp-for="Celular" class="form-control" placeholder="Digite o celular do contato">
-    @Html.ValidationMessageFor(x => x.Celular)
-  </div>
+          <div class="mb-3">
+            <label for="celular" class="form-label">Celular</label>
+            <input type="text" asp-for="Celular" class="form-control" placeholder="Digite o celular do contato">
+            @Html.ValidationMessageFor(x => x.Celular)
+          </div>
 
-  <div class="d-grid gap-2 d-lg-block d-md-block d-sm-block">
-      <button type="submit" class="btn btn-primary">Adicionar</button>
-      <a class="btn btn-secondary" role="button" asp-controller="Contatos" asp-action="Index">Voltar</a>
-  </div>
-</form>
-
+          <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary">Adicionar</button>
+              <a class="btn btn-secondary" role="button" asp-controller="Contatos" asp-action="Index">Voltar</a>
+          </div>
+    </form>
+</div>
