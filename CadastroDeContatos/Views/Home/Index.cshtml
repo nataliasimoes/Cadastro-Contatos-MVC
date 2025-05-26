@@ -2,7 +2,22 @@
     ViewData["Title"] = "Página Inicial";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Bem vindo!</h1>
-    <p>Sistema de controle de contatos</p>
+<div class="container-fluid bg-white py-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold mb-3 text-dark">Bem-vindo!</h1>
+        
+        <p class="fs-5 text-dark mb-4">
+            Gerencie todos os seus contatos profissionais e pessoais em um só lugar. 
+            <br>
+            Cadastre, edite e organize suas conexões de forma simples e eficiente.
+        </p>
+        
+        <div class="pt-4 mx-auto" style="max-width: 600px;">
+            
+            <a asp-controller="Contatos" asp-action="Index" 
+               class="btn btn-dark btn-lg px-4 py-2 border-0 shadow-sm">
+                <i class="bi bi-people-fill me-2"></i> Acessar Contatos
+            </a>
+        </div>
+    </div>
 </div>

@@ -27,11 +27,11 @@
         </div>    
     }
 
-  <h1 class="display-4">Contatos</h1>
+  <h1 class="display-4 fw-bold mb-3 text-dark">Contatos</h1>
 
   <br/>
 
-<table class="table" id="table-contatos">
+<table class="table table-hover align-middle" id="table-contatos">
   <thead>
     <tr>
       <th scope="col" >#</th>
@@ -53,8 +53,8 @@
                   <td>@contato.Celular</td>
                   <td>
                       <div class="btn-group" role="group">
-                      <a role="button" class="btn btn-primary" asp-controller="Contatos" asp-action="Editar" asp-route-id="@contato.Id">Editar</a>
-                      <a role="button" class="btn btn-danger" asp-controller="Contatos" asp-action="ApagarConfirmacao" asp-route-id="@contato.Id">Apagar</a>
+                      <a role="button" class="btn btn-outline-primary border-0" asp-controller="Contatos" asp-action="Editar" asp-route-id="@contato.Id"><i class="bi bi-pencil-fill"></i></a>
+                      <a role="button" class="btn btn-outline-danger border-0" asp-controller="Contatos" asp-action="ApagarConfirmacao" asp-route-id="@contato.Id"><i class="bi bi-trash3-fill"></i></a>
                       </div>        
                   </td>
             </tr>
